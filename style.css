@@ -1,7 +1,7 @@
 .grid-container {
 	display: grid;
 	grid-template-columns: auto auto ;
-	grid-gap: 2px;
+	
 	background-image: url(img.jpg);
 	background-size: 100% 100%;
 	background-attachment: fixed;
@@ -12,7 +12,7 @@
   }
   
   .grid-container > div {
-	background-color: rgba(0, 0, 0, 0.3);
+	
 	text-align: center;
 	padding: 10px 0;
 	font-size: 20px;
@@ -20,13 +20,25 @@
   
   .item1 {
 	grid-column: 1 / 5;
+	
+	height: 40px;
+  }
+  .item3{
+	grid-column: 1 / 5;
 	height: 50px;
+	background-color: none;
   }
   .item2 {
 	grid-column: 4 / 5;
+	background-color: rgba(0, 0, 0, 0.3);
 	height: 480px;
 	
   }
+  .item2:hover > .grid-container{
+	 background-image: url("bg.jpg"); 
+		
+  }
+  
   
   
   
@@ -76,7 +88,7 @@
   }
   
   input[type=button]:hover {
-	background-color: #fcbe16;
+	background-color: #9090db;
   }
   
   a:hover{
@@ -90,3 +102,34 @@
 	  
   }
   
+
+  #panel {
+	padding: 5px;
+	text-align: center;
+	background-color: #e5eecc;
+	border: solid 1px #c3c3c3;
+  }
+  
+  
+  #panel {
+	padding: 10px;
+	display: none;
+	background-color: rgba(182, 111, 44,0.7);
+	border: none;
+	color: white;
+	font-size: 2vw;
+  }
+  .btn {
+	background-color: DodgerBlue;
+	border: none;
+	color: white;
+	padding: 12px 16px;
+	font-size: 16px;
+	cursor: pointer;
+	float: right;
+	outline: none;
+	height: 60px;
+  }
+  .btn:hover {
+	background-color: RoyalBlue;
+  }
